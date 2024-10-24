@@ -1,0 +1,19 @@
+# Terraform (ignore from any subdirectory)
+**/.terraform/          # Ignore .terraform directory from anywhere in the project
+**/*.tfstate            # Ignore all .tfstate files
+**/*.tfstate.*          # Ignore backup state files
+**/crash.log            # Ignore crash log files
+**/terraform.tfvars     # Ignore sensitive variable files
+**/*.tfvars             # Ignore all .tfvars files in any directory
+**/override.tf          # Ignore override configuration files
+**/override.tf.json     # Ignore override JSON configuration files
+**/*.tfplan             # Ignore Terraform plan files
+**/.terraform.lock.hcl  # Ignore the provider lock file from any directory
+
+# Node.js (ignore from any subdirectory)
+**/node_modules/        # Ignore node_modules folder from anywhere in the project
+**/npm-debug.log        # Ignore npm debug log files from anywhere
+**/yarn-error.log       # Ignore yarn error log files from anywhere (if using Yarn)
+
+# Other common ignores
+.DS_Store               # macOS Finder metadata
